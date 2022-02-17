@@ -21,7 +21,7 @@ const Home: NextPage = () => {
     <div>
       <div>Platzi and Next.js</div>
       { productList.map(product => (
-        <div>{ product.image }</div>
+        <div>{ product.name }</div>
       )) }
     </div>
   );
