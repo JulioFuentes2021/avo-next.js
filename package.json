@@ -2,7 +2,7 @@
   "name": "ts-avocato-platzi",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,6 +15,7 @@
   "devDependencies": {
     "@types/node": "17.0.17",
     "@types/react": "17.0.39",
+    "cross-env": "^7.0.3",
     "eslint": "8.9.0",
     "eslint-config-next": "12.0.10",
     "typescript": "4.5.5"
