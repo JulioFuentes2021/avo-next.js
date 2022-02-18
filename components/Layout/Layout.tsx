@@ -10,11 +10,11 @@ const Layout: React.FC = ({ children }) => {//Algo que react puede renderizar
             {children}
         <footer>This is the footer</footer>
         
-        <style jsx>{`
+        {/* <style jsx>{`
           div {
             color: green
           } 
-        `}</style>
+        `}</style> */}
     </div>
   )
 }
