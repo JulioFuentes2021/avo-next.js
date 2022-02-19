@@ -4,7 +4,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="flex justify-center shadow-sm shadow-slate-400">
-      <ul className="w-2/4 text-xl flex justify-between">
+      <ul className="w-8/12 text-xl flex flex-col items-center sm:flex-row justify-between">
         <li className="bg-gray-200 flex items-center">
           <Link href="#">
             <a className="flex justify-center items-center h-16 w-40">

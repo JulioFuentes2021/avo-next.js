@@ -1,0 +1,8 @@
+.avoGrid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    /* background-color: aqua; */
+    /* justify-content: space-between; */
+    justify-items: center;
+    gap:2rem;
+}
