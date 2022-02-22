@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="flex justify-center shadow-sm shadow-slate-400">
       <ul className="w-8/12 text-xl flex flex-col items-center sm:flex-row justify-between">
         <li className="bg-gray-200 flex items-center">
-          <Link href="#">
+          <Link href="/">
             <a className="flex justify-center items-center h-16 w-40">
               <span className="mr-2">
               <svg width="34px" height="34px" viewBox="-99 0 511 512" className="jiggle">						
@@ -29,7 +29,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="flex items-center hover:bg-gray-100 transition-colors duration-700 ease">
-          <Link href="#">
+          <Link href="cart">
             <a className="flex justify-center items-center h-16 w-40">
               <span className="mr-2">
               <svg width="34px" height="34px" viewBox="0 0 512 512">

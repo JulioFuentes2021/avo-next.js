@@ -18,7 +18,7 @@ const Main = () => {
   return (
     <section className={`${styles.avoGrid} sm:w-3/4`}>
       {productList.map((product) => (
-        <Link href="#">
+        <Link href={`avo/${product.id}`}>
           <a>
             <div className="hover:-translate-y-2 transition-translate duration-700 ease border-t-2 border-slate-200 border-solid flex flex-col items-center shadow-sm shadow-gray-400 bg-gray-100">
               <img className="" src={product.image} alt={product.name} />

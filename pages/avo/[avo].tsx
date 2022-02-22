@@ -18,8 +18,7 @@ const Avo = () => {
     name: string,
     price: number,
     sku: string,
-    
-    attributes:Attributes
+    attributes:Attributes,
   };
 
   const {
