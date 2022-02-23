@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import styles from "./avo.module.css";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import Table from "@components/Table/Table";
+import Image from 'next/image';
 
 const Avo = () => {
   // type Attributes = {
@@ -52,7 +53,7 @@ const Avo = () => {
     <div className="my-24 flex flex-col items-center">
       <div className={`${styles.grid} w-3/4`}>
         <section className="">
-          <img className="w-60" src={avocato?.image} alt="" />
+          <Image src={`${avocato?.image}`} width={400} height={400} />
         </section>
         <section className="flex flex-col">
           <span className="text-2xl font-bold text-gray-700">
