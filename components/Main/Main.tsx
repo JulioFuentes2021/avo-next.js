@@ -2,18 +2,27 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./main.module.css";
 
-const Main = () => {
-  const [productList, setproductList] = useState<TProduct[]>([]);
+//El objeto windows solo existe en el navegador
 
-  useEffect(() => {
-    window
-      .fetch("api/avo")
-      .then((response) => response.json())
-      .then(({ data }) => {
-        setproductList(data);
-        console.log(data);
-      });
-  }, []);
+
+// export const getServerSideProps = async () => {//Se ejecuta en el servidor
+//   const response = await fetch('/api/avo');
+//   const { data: productList }: TAPIAvoResponse = await response.json();
+//   //data: productList
+
+//   return {
+//     props: {
+//       productList,
+//     }
+//   }
+// }
+
+const Main = ({ productList }: { productList: TProduct[] }) => {
+  // const [productList, setproductList] = useState<TProduct[]>([]);
+
+  // useEffect(() => {// Siempre se ejecuta en el navegador => CSR(client side rendering)
+    
+  // }, []);
 
   return (
     <section className={`${styles.avoGrid} sm:w-3/4`}>

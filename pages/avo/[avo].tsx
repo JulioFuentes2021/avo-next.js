@@ -5,26 +5,26 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import Table from "@components/Table/Table";
 
 const Avo = () => {
-  type Attributes = {
-    hardiness: string,
-    shape: string,
-    taste: string,
-    description: string,
-  }
+  // type Attributes = {
+  //   hardiness: string,
+  //   shape: string,
+  //   taste: string,
+  //   description: string,
+  // }
 
-  type Avoc = {
-    id: string,
-    image: string,
-    name: string,
-    price: number,
-    sku: string,
-    attributes:Attributes,
-  };
+  // type Avoc = {
+  //   id: string,
+  //   image: string,
+  //   name: string,
+  //   price: number,
+  //   sku: string,
+  //   attributes:Attributes,
+  // };
 
   const {
     query: { avo },
   } = useRouter();
-  const [avocato, setAvocato] = useState<Avoc>();
+  const [avocato, setAvocato] = useState<TProduct>();
 
   const getAvo = async () => {
     try {

@@ -5,7 +5,20 @@ import Image from "next/image";
 import Main from "@components/Main/Main";
 // import styles from "../styles/Home.module.css";
 
-const Home: NextPage = () => {
+
+export const getServerSideProps = async () => {//Se ejecuta en el servidor
+  const response = await fetch('/api/avo');
+  const { data: productList }: TAPIAvoResponse = await response.json();
+  //data: productList
+
+  return {
+    props: {
+      productList,
+    }
+  }
+}
+
+const Home = ({ productList }: { productList: TProduct[] }) => {
   // flex justify-between flex-wrap
   return (
     <div>
@@ -33,7 +46,7 @@ const Home: NextPage = () => {
           </article>
           <span></span>
         </div>
-        <Main />
+        <Main productList={productList} />
       </main>
     </div>
   );
