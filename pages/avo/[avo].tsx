@@ -53,7 +53,7 @@ const Avo = () => {
     <div className="my-24 flex flex-col items-center">
       <div className={`${styles.grid} w-3/4`}>
         <section className="">
-          <Image src={`${avocato?.image}`} width={400} height={400} />
+          <Image src={`/${avocato?.image}`} width={400} height={400} />
         </section>
         <section className="flex flex-col">
           <span className="text-2xl font-bold text-gray-700">
