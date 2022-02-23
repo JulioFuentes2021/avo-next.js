@@ -7,7 +7,7 @@ import Main from "@components/Main/Main";
 
 
 export const getServerSideProps = async () => {//Se ejecuta en el servidor
-  const response = await fetch('/api/avo');
+  const response = await fetch('https://avo-next-js-csipp931a-juliofuentes2021.vercel.app/api/avo');
   const { data: productList }: TAPIAvoResponse = await response.json();
   //data: productList
 

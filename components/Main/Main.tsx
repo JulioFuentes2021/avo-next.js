@@ -32,7 +32,7 @@ const Main = ({ productList }: { productList: TProduct[] }) => {
         <Link href={`avo/${product.id}`} key={product.id}>
           <a>
             <div className="hover:-translate-y-2 transition-translate duration-700 ease border-t-2 border-slate-200 border-solid flex flex-col items-center shadow-sm shadow-gray-400 bg-gray-100">
-              <Image className="" src={product.image} alt={product.name} />
+              <Image className="" src={`/${product.image}`} width={400} height={400} alt={product.name} />
               <article className="flex flex-col shadow-sm p-4 shadow-slate-400 mt-2 w-full bg-white">
                 <span className="text-black font-bold text-xl">
                   {product.name}
